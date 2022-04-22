@@ -9,14 +9,14 @@
     "preview": "vite preview",
     "lint": "eslint 'src/**/*.{js,jsx,tsx,ts}' --quiet",
     "lint:fix": "eslint 'src/**/*.{js,jsx,tsx,ts}' --fix --quiet",
-    "prettier": "prettier --write '**/*.{less,css,md,json}'"
+    "prettier": "prettier --write 'src/**/*.{less,scss,css,md,json}'"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "npm run lint:fix",
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
       "git add ."
     ],
     "*.{less,css,md,json}": [
@@ -35,7 +35,8 @@
     "react-dom": "^18.0.0",
     "react-router-config": "^5.1.1",
     "react-router-dom": "5.2.0",
-    "yapi-to-ts": "^1.1.0"
+    "yapi-to-ts": "^1.1.0",
+    "yorkie": "^2.0.0"
   },
   "devDependencies": {
     "@types/node": "^17.0.25",

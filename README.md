@@ -1,10 +1,11 @@
 ## 简介
 
-使用 vite@2.x + react@18.x + hooks + typescript@4.x + antd@4.x 最新技术栈搭建的框架
+使用 [vite@2.x](https://cn.vitejs.dev) + [react@18.x](https://reactjs.org/) + hooks + [typescript@4.x](https://www.tslang.cn/) + [antd@4.x](https://ant-design.gitee.io/index-cn) 最新技术栈搭建的框架
 
 ## 项目启动
 
 ```
+git clone https://github.com/lenslp/vite-react-ts-template.git
 yarn install
 yarn dev
 ```
@@ -42,6 +43,7 @@ yarn dev
 │ │ ├── BasicLayout // 基础布局组件，带顶部栏和导航，适用于中后台项目
 │ │ ├── BlankLayout // 空白布局组件
 │ ├── pages // 页面组件
+│ ├── routes // 路由配置
 │ ├── api // 定义接口，使用 [yapi-to-ts](https://www.npmjs.com/package/yapi-to-ts) 生成接口在此目录下
 │ ├── styles // 全局样式目录
 │ ├── utils // 公共工具目录
