@@ -1,6 +1,9 @@
 import UserLayout from '@/layouts/UserLayout';
 import BasicLayout from '@/layouts/BasicLayout';
-import React from 'react';
+import Login from '@/pages/user/login';
+import Register from '@/pages/user/register';
+import Home from '@/pages/home';
+
 // import { SmileOutlined } from '@ant-design/icons';
 
 export interface IRouteConfig {
@@ -12,7 +15,7 @@ export interface IRouteConfig {
   name?: string;
   icon?: any;
   // 是否校验权限, false 为不校验, 不存在该属性或者为true 为校验, 子路由会继承父路由的 auth 属性
-  auth?: boolean;
+  isAuth?: boolean;
   routes?: IRouteConfig[];
 }
 
@@ -24,12 +27,12 @@ const layouts: IRouteConfig[] = [
       {
         path: '/user/login',
         title: '登录',
-        component: React.lazy(() => import('@/pages/user/login')),
+        component: Login,
       },
       {
         path: '/user/register',
         title: '注册',
-        component: React.lazy(() => import('@/pages/user/register')),
+        component: Register,
       },
     ],
   },
@@ -44,7 +47,7 @@ const layouts: IRouteConfig[] = [
         title: '首页',
         name: '首页',
         // icon: <SmileOutlined />,
-        component: React.lazy(() => import('@/pages/home')),
+        component: Home,
       },
     ],
   },

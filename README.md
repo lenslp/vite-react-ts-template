@@ -1,6 +1,6 @@
 ## 简介
 
-使用 [vite@2.x](https://cn.vitejs.dev) + [react@18.x](https://reactjs.org/) + hooks + [typescript@4.x](https://www.tslang.cn/) + [antd@4.x](https://ant-design.gitee.io/index-cn) 最新技术栈搭建的框架
+使用 [vite@2.x](https://cn.vitejs.dev) + [react@18.x](https://reactjs.org/) + hooks + [typescript@4.x](https://www.tslang.cn/) + [antd@4.x](https://ant-design.gitee.io/index-cn) 最新技术栈搭建的 react 模版
 
 ## 项目启动
 

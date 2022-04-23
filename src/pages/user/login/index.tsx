@@ -1,15 +1,14 @@
 import { Button, Checkbox, Form, Input } from 'antd';
 import classNames from 'classnames';
-import { useHistory } from 'react-router-dom';
 
 import styles from './index.module.less';
 
-const Login = () => {
-  const history = useHistory();
+const Login = ({ history }) => {
   const [form] = Form.useForm();
 
   const onFinish = async values => {
     console.log(values);
+    history.push('/home');
   };
 
   return (

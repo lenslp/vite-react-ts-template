@@ -1,9 +1,7 @@
 import { Button, Checkbox, Form, Input } from 'antd';
-import { useHistory } from 'react-router-dom';
 import styles from './index.module.less';
 
-const Register = () => {
-  const history = useHistory();
+const Register = ({ history }) => {
   const [form] = Form.useForm();
 
   // 提交
