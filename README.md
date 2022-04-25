@@ -26,6 +26,8 @@ yarn dev
 - [x] proxy 代理配置
 - [x] 引入 [yapi-to-ts](https://www.npmjs.com/package/yapi-to-ts)，根据 YApi 或 Swagger 的接口定义生成 TypeScript/JavaScript 的接口类型及其请求函数代码
 - [x] 路由及 Layout 配置
+- [ ] 权限控制
+- [ ] 动态路由
 - [ ] 微前端
 
 ## 项目目录
